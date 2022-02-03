@@ -1,3 +1,7 @@
+CREATE DATABASE videoshop;
+
+USE videoshop;
+
 CREATE TABLE Movies (
     VideoCode    SMALLINT      NOT NULL,
     MovieTitle   VARCHAR (50)  NULL,
