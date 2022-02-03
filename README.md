@@ -2,7 +2,7 @@
 
 This is a Scala implementation of the NoSQL and Spark Query Language workshop
 
-The workshop was given as part of the Big Data Engineering for Analytics module which fulfills a requirement for the Engineering Big Data certificate issued by [NUS-ISS](https://www.iss.nus.edu.sg/)
+The workshop was given as part of the [Big Data Engineering for Analytics](https://www.iss.nus.edu.sg/executive-education/course/detail/big-data-engineering-for--analytics/data-science) module which fulfills a requirement for the Engineering Big Data certificate issued by [NUS-ISS](https://www.iss.nus.edu.sg/)
 
 ## Getting started
 
@@ -36,9 +36,9 @@ spark-submit {your-jar-file}
 ```
 
 ### (Option 2 RECOMMENDED) Use Intellij
-Install Intellij and use it to Open the build.sbt file as a Project
+Install [Intellij](https://www.jetbrains.com/idea/) and use it to Open the [build.sbt](./build.sbt) file as a Project
 
-Intellij will resolve the dependencies listed in build.sbt
+Intellij will resolve the dependencies listed in [build.sbt](./build.sbt)
 
 Go to Run > Edit Configurations > Modify options > Add dependencies with "provided" scope to classpath
 
@@ -49,10 +49,12 @@ Run > Run Main
 ### BEAD_DATA
 The data was provided by [rvenkatiss](https://github.com/rvenkatiss/BEAD_DATA)
 
+I have copied the data into [src/main/resources](src/main/resources)
+
 ### Set up MYSQL Database
 This project uses a MySQL server to simulated data extraction from an RDBMS
 
-I used Docker to setup this up
+I used [Docker](https://www.docker.com/) to setup this up
 ```
 docker run --name norman-mysql -e MYSQL_ROOT_PASSWORD=norman -p 3306:3306 -d mysql:5.7.37
 ```
