@@ -5,10 +5,11 @@ version := "0.0.1"
 scalaVersion := "2.12.10"
 
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.0.3" % "provided"
-
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.49"
 libraryDependencies += "com.github.mrpowers" %% "spark-daria" % "0.38.2"
 libraryDependencies += "com.github.mrpowers" %% "spark-fast-tests" % "0.21.3" % "test"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+
 
 // test suite settings
 fork in Test := true
