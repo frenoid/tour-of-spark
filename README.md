@@ -49,7 +49,7 @@ Run > Run Main
 ### BEAD_DATA
 The data was provided by [rvenkatiss](https://github.com/rvenkatiss/BEAD_DATA)
 
-### Set up MYSQL
+### Set up MYSQL Database
 This project uses a MySQL server to simulated data extraction from an RDBMS
 
 I used Docker to setup this up
@@ -69,5 +69,11 @@ Exit the shell
 ```
 exit
 ```
-### Giter8 template
+
+### Set up MySQL JDBC driver
+For the Spark job to read from MySQL, it needs the MySQL JDBC driver <br />
+1. Download it from [Maven](https://mvnrepository.com/artifact/mysql/mysql-connector-java/5.1.49) <br />
+2. Then add it to Intellij's dependencies list: File > Project Structure > Dependencies > + and pick the JDBC driver file
+
+## Giter8 template
 I used  [spark-sbt.g8 from MrPowers](https://github.com/MrPowers/spark-sbt.g8)
