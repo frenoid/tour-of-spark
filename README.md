@@ -8,8 +8,12 @@ The workshop was given as part of the [Big Data Engineering for Analytics](https
 
 ### Clone the repo
 ```
-https://github.com/frenoid/tour-of-spark.git
+git clone https://github.com/frenoid/tour-of-spark.git
 ```
+### Structure
+1. [src/main/scala/com/normanlimxk/sparkworkshop](src/main/scala/com/normanlimxk/sparkworkshop) contains the Main Scala class 
+2. [src/main/resources](src/main/resources) contains data
+3. [build.sbt](./build.sbt) contains a list of dependencies. Similar to pom.xml in Maven
 
 ### Running the Spark job
 You have 2 options to run the spark job
