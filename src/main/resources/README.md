@@ -1,0 +1,2 @@
+# Data
+The data is sourced from [BEAD_DATA](https://github.com/rvenkatiss/BEAD_DATA) by [rvenkatiss](https://github.com/rvenkatiss) and provided as part of a workshop for the NUS-ISS course on [Big Data Engineering for Analytics](https://www.iss.nus.edu.sg/executive-education/course/detail/big-data-engineering-for--analytics)
