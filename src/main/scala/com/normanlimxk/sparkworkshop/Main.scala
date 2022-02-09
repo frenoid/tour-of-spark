@@ -2,18 +2,10 @@ package com.normanlimxk.sparkworkshop
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructType}
+import com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
 
-object Main {
+object Main extends SparkSessionWrapper {
   def main(args: Array[String]): Unit = {
-    lazy val spark: SparkSession = {
-      SparkSession.builder().
-        config("spark.executor.memory", "1g").
-        config("spark.driver.memory", "2g").
-        master("local[1]").
-        appName("Norman's Spark Program").
-        getOrCreate()
-    }
-
     val customerFilePath = "src/main/resources/Customer.csv"
     val countryFilePath = "src/main/resources/Country.csv"
     val countryOutPath = "src/main/resources/out/Country"
@@ -173,6 +165,10 @@ object Main {
       case e: ClassNotFoundException => {
           println("Could not read from the MySQL database")
           println("Download the mysql jdbc driver from https://mvnrepository.com/artifact/mysql/mysql-connector-java/5.1.49 and add it to the classpath")
+      }
+      case e: CommunicationsException => {
+        println("Could not connect to MySQL")
+        println("Ensure there is a MySQL server running on localhost. Try Docker")
       }
     }
 
