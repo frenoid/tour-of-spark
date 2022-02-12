@@ -1,9 +1,11 @@
-# SWE5003 NoSQL and Spark Query Language workshop
+# tour-of-spark
 
-This is a Scala implementation of the NoSQL and Spark Query Language workshop
+This code demonstrate common dataframe operations in Spark
 
-The workshop was given as part of the [Big Data Engineering for Analytics](https://www.iss.nus.edu.sg/executive-education/course/detail/big-data-engineering-for--analytics/data-science) module which fulfills a requirement for the Engineering Big Data certificate issued by [NUS-ISS](https://www.iss.nus.edu.sg/)
+This is **Workshop 10 Spark DataFrame Basics**  which one of a workshop series given as part of
+the [Big Data Engineering for Analytics](https://www.iss.nus.edu.sg/executive-education/course/detail/big-data-engineering-for--analytics/data-science) module which fulfills a requirement for the Engineering Big Data certificate issued by [NUS-ISS](https://www.iss.nus.edu.sg/)
 
+I have translated the original Python code to Scala
 ## Getting started
 
 ### Clone the repo
@@ -48,13 +50,6 @@ Go to Run > Edit Configurations > Modify options > Add dependencies with "provid
 
 Run > Run Main
 
-## Data
-
-### BEAD_DATA
-The data was provided by [rvenkatiss](https://github.com/rvenkatiss/BEAD_DATA)
-
-I have copied the data into [src/main/resources](src/main/resources)
-
 ### Set up MYSQL Database
 This project uses a MySQL server to simulated data extraction from an RDBMS
 
@@ -80,6 +75,15 @@ exit
 For the Spark job to read from MySQL, it needs the MySQL JDBC driver <br />
 1. Download it from [Maven](https://mvnrepository.com/artifact/mysql/mysql-connector-java/5.1.49) <br />
 2. Then add it to Intellij's dependencies list: File > Project Structure > Dependencies > + and pick the JDBC driver file
+
+
+## Data
+
+### BEAD_DATA
+The data was provided by [rvenkatiss](https://github.com/rvenkatiss/BEAD_DATA)
+
+I have copied the data into [src/main/resources](src/main/resources)
+
 
 ## Giter8 template
 I used  [spark-sbt.g8 from MrPowers](https://github.com/MrPowers/spark-sbt.g8)
