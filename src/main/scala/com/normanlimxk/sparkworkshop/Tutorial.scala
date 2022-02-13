@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{DoubleType, IntegerType, StringType, StructType}
 import com.mysql.jdbc.exceptions.jdbc4.CommunicationsException
 
-object Main extends SparkSessionWrapper {
+object Tutorial extends SparkSessionWrapper {
   def main(args: Array[String]): Unit = {
     val customerFilePath = "src/main/resources/Customer.csv"
     val countryFilePath = "src/main/resources/Country.csv"

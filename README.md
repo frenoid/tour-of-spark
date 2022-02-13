@@ -2,7 +2,7 @@
 
 This code demonstrate common dataframe operations in Spark
 
-This is **Workshop 10 Spark DataFrame Basics**  which one of a workshop series given as part of
+This is **Workshop 9 Data Retrieval Using SPARK Queries**  which one of a workshop series given as part of
 the [Big Data Engineering for Analytics](https://www.iss.nus.edu.sg/executive-education/course/detail/big-data-engineering-for--analytics/data-science) module which fulfills a requirement for the Engineering Big Data certificate issued by [NUS-ISS](https://www.iss.nus.edu.sg/)
 
 I have translated the original Python code to Scala
@@ -13,9 +13,9 @@ I have translated the original Python code to Scala
 git clone https://github.com/frenoid/tour-of-spark.git
 ```
 ### Structure
-1. [src/main/scala/com/normanlimxk/sparkworkshop](src/main/scala/com/normanlimxk/sparkworkshop) contains the Main Scala class 
-2. [src/main/resources](src/main/resources) contains data
+1. [src/main/resources](src/main/resources) contains data
 3. [build.sbt](./build.sbt) contains a list of dependencies. Similar to pom.xml in Maven
+2. [Tutorial.scala](src/main/scala/com/normanlimxk/sparkworkshop/Tutorial.scala) contains the bulk of commonly used SparkSQL functions
 
 ### Running the Spark job
 You have 2 options to run the spark job
